@@ -2,7 +2,7 @@ import { Action } from "@reduxjs/toolkit";
 
 const initialState = {};
 
-function reducer(state: any, action: Action) {
+function reducer(state = initialState, action: Action) {
   switch (action.type) {
     default:
       return state;

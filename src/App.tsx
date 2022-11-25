@@ -1,5 +1,4 @@
 import Counter from "@/components/counter";
-import { TodoApp } from "@/components/todo-app";
 
 import React, { memo } from "react";
 import { useRoutes } from "react-router";
@@ -11,8 +10,7 @@ const App = memo(() => {
       <div className="header">header</div>
       <div className="page">
         {useRoutes(routes)}
-        <Counter></Counter>
-        <TodoApp></TodoApp>
+        {/* <Counter></Counter> */}
       </div>
       <div className="footer">footer</div>
     </div>
